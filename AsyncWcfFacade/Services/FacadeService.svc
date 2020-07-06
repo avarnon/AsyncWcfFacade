@@ -1,0 +1,3 @@
+﻿/* ServiceHost Language="C#" Debug="true" Service="AsyncWcfFacade.Services.FacadeService" CodeBehind="FacadeService.svc.cs" */
+<%@ ServiceHost Language="C#" Debug="true" Service="AsyncWcfFacade.Services.FacadeService" Factory="AsyncWcfFacade.Unity.UnityServiceHostFactory" %>
+
