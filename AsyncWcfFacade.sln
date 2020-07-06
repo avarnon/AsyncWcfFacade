@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWcfFacade", "AsyncWcfF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncWcfFacade.Core.Client", "AsyncWcfFacade.Core.Client\AsyncWcfFacade.Core.Client.csproj", "{A876A32C-3C62-4838-B34E-CE7432E4BB17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreWcfFacade", "CoreWcfFacade\CoreWcfFacade.csproj", "{29D3C77A-196E-4250-B984-AEBC3A4EE34B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A876A32C-3C62-4838-B34E-CE7432E4BB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A876A32C-3C62-4838-B34E-CE7432E4BB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A876A32C-3C62-4838-B34E-CE7432E4BB17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29D3C77A-196E-4250-B984-AEBC3A4EE34B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29D3C77A-196E-4250-B984-AEBC3A4EE34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29D3C77A-196E-4250-B984-AEBC3A4EE34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29D3C77A-196E-4250-B984-AEBC3A4EE34B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
