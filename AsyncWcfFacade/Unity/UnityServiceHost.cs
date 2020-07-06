@@ -23,7 +23,7 @@ namespace AsyncWcfFacade.Unity
         /// The base addresses.
         /// </param>
         public UnityServiceHost(Type serviceType, IUnityContainer container, params Uri[] baseAddresses)
-            : base(serviceType ?? throw new ArgumentNullException(nameof(serviceType)), baseAddresses)
+            : base((container ?? throw new ArgumentNullException(nameof(container))).Resolve(serviceType ?? throw new ArgumentNullException(nameof(serviceType))), baseAddresses)
         {
             this.Container = container ?? throw new ArgumentNullException(nameof(container));
         }

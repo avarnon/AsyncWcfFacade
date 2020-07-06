@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.ServiceModel;
 using System.Threading.Tasks;
 using System.Web;
@@ -8,12 +9,13 @@ namespace AsyncWcfFacade.Services
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class FacadeService : IFacadeService
     {
-        public async Task<string> Search(string term)
+        private readonly HttpClient _httpClient;
+
+        public FacadeService(HttpClient httpClient)
         {
-            using (HttpClient httpClient = new HttpClient())
-            {
-                return await httpClient.GetStringAsync($"https://www.google.com/search?q={HttpUtility.UrlEncode(term ?? string.Empty)}");
-            }
+            this._httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
         }
+
+        public async Task<string> Search(string term) => await this._httpClient.GetStringAsync($"search?q={HttpUtility.UrlEncode(term ?? string.Empty)}");
     }
 }
